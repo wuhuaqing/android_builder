@@ -28,5 +28,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: my-build-apk
-          path: ./**/*.apk
+          path: app/build/outputs/apk/env_release/*.apk
 
