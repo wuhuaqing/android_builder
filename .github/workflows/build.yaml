@@ -28,5 +28,5 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: my-build-apk
-          path: Jetpack_Zh/app/build/outputs/apk/**/**/*.apk 
+          path: build/outputs/apk/env_release/release/*.apk
 
