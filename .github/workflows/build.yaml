@@ -25,8 +25,8 @@ jobs:
           chmod +x gradlew
           ./gradlew assembleenv_releaseRelease --stacktrace
       - name: Upload APK
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: my-build-apk
-          path: app/build/outputs/apk/env_release/*.apk
+          path: ${{ github.workspace }}/app/build/outputs/apk/**/*.apk
 
